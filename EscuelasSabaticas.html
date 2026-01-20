@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="css/Escuelas.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuelas Sabaticas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans bg-gray-50 text-gray-800 pt-20">
+
+    <!-- ================= HEADER ================= -->
+    <header id="header" class="bg-transparent backdrop-blur-md shadow-md fixed w-full z-10 top-0 transition-colors duration-300">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+
+            <a href="index.html">
+                <img src="Imagenes/Logo Iglesia de Dios.png" alt="Logo Iglesia" class="h-12 w-auto">
+            </a>
+
+            <!-- Menú desktop -->
+            <nav class="space-x-6 hidden md:flex">
+                <a href="himnario-seleccionado.html" class="hover:text-blue-400 text-white">Himnario Seleccionado</a>
+                <a href="himnario-inspirado.html" class="hover:text-blue-400 text-white">Himnario Inspirado</a>
+                <a href="EscuelasSabaticas.html" class="hover:text-blue-400 text-white">Escuelas Sabáticas</a>
+                <a href="doctrina.html" class="hover:text-blue-400 text-white">Doctrina</a>
+                <a href="documentacion.html" class="hover:text-blue-400 text-white">Documentación</a>
+                <a href="localidades.html" class="hover:text-blue-400 text-white">Localidades</a>
+                <a href="eventos.html" class="hover:text-blue-400 text-white">Eventos</a>
+                <a href="multimedia.html" class="hover:text-blue-400 text-white">Multimedia</a>
+            </nav>
+
+            <!-- Botón hamburguesa -->
+            <button id="menu-toggle" class="menu-toggle md:hidden" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </header>
+
+    <!-- ================= MENÚ MÓVIL ================= -->
+    <div id="menu-mobile" class="menu-mobile">
+        <a href="himnario-seleccionado.html">Himnario Seleccionado</a>
+        <a href="himnario-inspirado.html">Himnario Inspirado</a>
+        <a href="EscuelasSabaticas.html">Escuelas Sabáticas</a>
+        <a href="doctrina.html">Doctrina</a>
+        <a href="documentacion.html">Documentación</a>
+        <a href="localidades.html">Localidades</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="multimedia.html">Multimedia</a>
+    </div>
+
+    <!-- Overlay -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <!-- ================= SECCIONES ================= -->
+
+    <section class="Escuelas">
+        <div class="Escuelas-header">
+            <h2>Escuelas Sabáticas Primer Trimestre 2026</h2>
+            <a href="index.html" class="btn-escuelas">← Volver</a>
+        </div>
+
+        <div class="Escuelas-grid">
+            <div class="Escuela cursor-pointer" style="background-image:url('Imagenes/caratulas/Gen1-26.png')"
+                 onclick="window.open('EscuelasPDF/Escuela Adultos 1er. Trimestre 2026.pdf','_blank')">
+                <div class="overlay"><h3>Escuela General</h3></div>
+            </div>
+
+            <div class="Escuela cursor-pointer" style="background-image:url('Imagenes/caratulas/Fem1-26.png')"
+                 onclick="window.open('EscuelasPDF/Escuela Femenil 1er. Trimestre 2026.pdf','_blank')">
+                <div class="overlay"><h3>Escuela Femenil</h3></div>
+            </div>
+
+            <div class="Escuela cursor-pointer" style="background-image:url('Imagenes/caratulas/Juv1-26.png')"
+                 onclick="window.open('EscuelasPDF/Escuela Juvenil 1er. Trimestre 2026.pdf','_blank')">
+                <div class="overlay"><h3>Escuela Juvenil</h3></div>
+            </div>
+
+            <div class="Escuela cursor-pointer" style="background-image:url('Imagenes/caratulas/Inf1-26.png')"
+                 onclick="window.open('EscuelasPDF/Escuela Infantil 1er. Trimestre 2026.pdf','_blank')">
+                <div class="overlay"><h3>Escuela Infantil</h3></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="Escuelas">
+        <div class="Escuelas-header"><h2>Cuarto Trimestre 2025</h2></div>
+        <div class="Escuelas-grid">
+            <div class="Escuela cursor-pointer" style="background-image: url('Imagenes/caratulas/Gen4-25.png');"
+                 onclick="window.open('EscuelasPDF/Escuela Adultos 4er. Trimestre 2025.pdf', '_blank')">
+                <!-- Para redireccionar con la escuela -->
+                <div class="overlay">
+                    <h3>Escuela General</h3>
+                </div>
+            </div>
+
+            <div class="Escuela cursor-pointer" style="background-image: url('Imagenes/caratulas/Fem4-25.png'); "
+                 onclick="window.open('EscuelasPDF/Escuela Femenil 4er. Trimestre 2025.pdf', '_blank')">
+                <!-- Para redireccionar con la escuela -->
+                <div class="overlay">
+                    <h3>Escuela Femenil</h3>
+                </div>
+            </div>
+
+            <div class="Escuela cursor-pointer" style="background-image: url('Imagenes/caratulas/Juv4-25.png'); "
+                 onclick="window.open('EscuelasPDF/Escuela Juvenil 4er. Trimestre 2025.pdf', '_blank')">
+                <!-- Para redireccionar con la escuela -->
+                <div class="overlay">
+                    <h3>Escuela Juvenil</h3>
+                </div>
+            </div>
+
+            <div class="Escuela cursor-pointer" style="background-image: url('Imagenes/caratulas/Inf4-25.png'); "
+                 onclick="window.open('EscuelasPDF/Escuela Infantil 4er. Trimestre 2025.pdf', '_blank')">
+                <!-- Para redireccionar con la escuela -->
+                <div class="overlay">
+                    <h3>Escuela infantil</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="Escuelas">
+        <div class="Escuelas-header"><h2>Tercer Trimestre 2025</h2></div>
+        <div class="Escuelas-grid">
+            <div class="Escuela cursor-pointer" style="background-image: url('Imagenes/caratulas/Gen3-25.png');"
+                 onclick="window.open('EscuelasPDF/Escuela Adultos 3er. Trimestre 2025.pdf', '_blank')">
+                <!-- Para redireccionar con la escuela -->
+                <div class="overlay">
+                    <h3>Escuela General</h3>
+                </div>
+            </div>
+
+            <div class="Escuela cursor-pointer" style="background-image: url('Imagenes/caratulas/Fem3-25.png'); "
+                 onclick="window.open('EscuelasPDF/Escuela Femenil 3er. Trimestre 2025.pdf', '_blank')">
+                <!-- Para redireccionar con la escuela -->
+                <div class="overlay">
+                    <h3>Escuela Femenil</h3>
+                </div>
+            </div>
+
+            <div class="Escuela cursor-pointer" style="background-image: url('Imagenes/caratulas/Juv3-25.png'); "
+                 onclick="window.open('EscuelasPDF/Escuela Juvenil 3er. Trimestre 2025.pdf', '_blank')">
+                <!-- Para redireccionar con la escuela -->
+                <div class="overlay">
+                    <h3>Escuela Juvenil</h3>
+                </div>
+            </div>
+
+            <div class="Escuela cursor-pointer" style="background-image: url('Imagenes/caratulas/Inf3-25.png'); "
+                 onclick="window.open('EscuelasPDF/Escuela Infantil 3er. Trimestre 2025.pdf', '_blank')">
+                <!-- Para redireccionar con la escuela -->
+                <div class="overlay">
+                    <h3>Escuela infantil</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="Escuelas">
+        <div class="Escuelas-header"><h2>Segundo Trimestre 2025</h2></div>
+        <div class="Escuelas-grid">
+            <div class="Escuela cursor-pointer" style="background-image: url('Imagenes/caratulas/Gen2-25.png');"
+                 onclick="window.open('EscuelasPDF/Escuela Adultos 2er. Trimestre 2025.pdf', '_blank')">
+                <!-- Para redireccionar con la escuela -->
+                <div class="overlay">
+                    <h3>Escuela General</h3>
+                </div>
+            </div>
+
+            <div class="Escuela cursor-pointer" style="background-image: url('Imagenes/caratulas/Fem2-25.png'); "
+                 onclick="window.open('EscuelasPDF/Escuela Femenil 2er. Trimestre 2025.pdf', '_blank')">
+                <!-- Para redireccionar con la escuela -->
+                <div class="overlay">
+                    <h3>Escuela Femenil</h3>
+                </div>
+            </div>
+
+            <div class="Escuela cursor-pointer" style="background-image: url('Imagenes/caratulas/Juv2-25.png'); "
+                 onclick="window.open('EscuelasPDF/Escuela Juvenil 2er. Trimestre 2025.pdf', '_blank')">
+                <!-- Para redireccionar con la escuela -->
+                <div class="overlay">
+                    <h3>Escuela Juvenil</h3>
+                </div>
+            </div>
+
+            <div class="Escuela cursor-pointer" style="background-image: url('Imagenes/caratulas/Inf2-25.png'); "
+                 onclick="window.open('EscuelasPDF/Escuela Infantil 2er. Trimestre 2025.pdf', '_blank')">
+                <!-- Para redireccionar con la escuela -->
+                <div class="overlay">
+                    <h3>Escuela infantil</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="Escuelas">
+        <div class="Escuelas-header"><h2>Primer Trimestre 2025</h2></div>
+        <div class="Escuelas-grid">
+            <div class="Escuela cursor-pointer" style="background-image: url('Imagenes/caratulas/Gen1-25.png');"
+                 onclick="window.open('EscuelasPDF/Escuela Adultos 1er. Trimestre 2025.pdf', '_blank')">
+                <!-- Para redireccionar con la escuela -->
+                <div class="overlay">
+                    <h3>Escuela General</h3>
+                </div>
+            </div>
+
+            <div class="Escuela cursor-pointer" style="background-image: url('Imagenes/caratulas/Fem1-25.png'); "
+                 onclick="window.open('EscuelasPDF/Escuela Femenil 1er. Trimestre 2025.pdf', '_blank')">
+                <!-- Para redireccionar con la escuela -->
+                <div class="overlay">
+                    <h3>Escuela Femenil</h3>
+                </div>
+            </div>
+
+            <div class="Escuela cursor-pointer" style="background-image: url('Imagenes/caratulas/Juv1-25.png'); "
+                 onclick="window.open('EscuelasPDF/Escuela Juvenil 1er. Trimestre 2025.pdf', '_blank')">
+                <!-- Para redireccionar con la escuela -->
+                <div class="overlay">
+                    <h3>Escuela Juvenil</h3>
+                </div>
+            </div>
+
+            <div class="Escuela cursor-pointer" style="background-image: url('Imagenes/caratulas/Inf1-25.png'); "
+                 onclick="window.open('EscuelasPDF/Escuela Infantil 1er. Trimestre 2025.pdf', '_blank')">
+                <!-- Para redireccionar con la escuela -->
+                <div class="overlay">
+                    <h3>Escuela infantil</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="js/Escuelas.js"></script>
+</body>
+</html>

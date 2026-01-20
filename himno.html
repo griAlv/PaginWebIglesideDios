@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himno</title>
+    <link rel="stylesheet" href="css/himno.css">
+    <style>
+        /* Sidebar oculto por defecto */
+        #panel-opciones {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #1E4E59;
+            display: none; /* 👈 ahora no se ve hasta que se active */
+            flex-direction: column;
+            padding: 20px;
+            transition: transform 0.3s ease;
+            transform: translateX(100%); /* fuera de pantalla */
+            z-index: 1000;
+        }
+
+            #panel-opciones a {
+                margin: 15px 0;
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+            }
+
+        /* Botón menú */
+        #menu-opciones {
+            font-size: 30px;
+            cursor: pointer;
+            user-select: none;
+            z-index: 1100;
+        }
+
+        /* Fondo oscuro */
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: none;
+            z-index: 900;
+        }
+
+        /* Activar el sidebar */
+        #panel-opciones.activo {
+            display: flex;
+            transform: translateX(0);
+        }
+
+        #overlay.activo {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button id="atras">Atrás</button>
+        <h1 id="titulo-himno">Himno</h1>
+        <div id="menu-opciones">☰</div>
+    </header>
+
+    <!-- Sidebar (fuera del header) -->
+    <div id="panel-opciones">
+        <a href="himnario-inspirado.html">Himnario Inspirado</a>
+        <a href="EscuelasSabaticas.html">Escuelas Sabáticas</a>
+        <a href="doctrina.html">Doctrina</a>
+        <a href="documentacion.html">Documentación</a>
+        <a href="localidades.html">Localidades</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="multimedia.html">Multimedia</a>
+    </div>
+    <div id="overlay"></div>
+
+    <main>
+        <div id="letra-himno" class="letra"></div>
+
+        <audio controls id="audioHimno"></audio>
+    </main>
+
+    <script src="js/himno.js"></script>
+    <script>
+        const menuBtn = document.getElementById("menu-opciones");
+        const panel = document.getElementById("panel-opciones");
+        const overlay = document.getElementById("overlay");
+
+        menuBtn.addEventListener("click", () => {
+            panel.classList.toggle("activo");
+            overlay.classList.toggle("activo");
+        });
+
+        overlay.addEventListener("click", () => {
+            panel.classList.remove("activo");
+            overlay.classList.remove("activo");
+        });
+    </script>
+</body>
+</html>
